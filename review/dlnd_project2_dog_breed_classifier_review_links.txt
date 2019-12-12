@@ -1,0 +1,40 @@
+DLND_Project2
+Dog Breed Classifier
+
+To keep learning more about AI:
+
+9 Deep Learning papers
+https://adeshpande3.github.io/adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html
+
+MIT AGI: Building machines that see, learn, and think like people
+https://www.youtube.com/watch?v=7ROelYvo8f0
+
+YOLO Object Detection
+https://www.youtube.com/watch?v=4eIBisqx9_g
+
+New Deep Reinforcement Learning Nanodegree
+https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893
+
+The AlphaGo Movie
+https://www.alphagomovie.com/
+
+The goal is to not only reduce overfitting via augmentation but also to augment data in a way such that to best improve the classifier
+Related paper
+http://cs231n.stanford.edu/reports/2017/pdfs/300.pdf
+
+You created a CNN for dog breed recognition
+Using regularization methods, like Dropout, is always helpful when we are training a model that trends to overfit.
+Dropout prevents overfitting and provides a way of approximately combining exponentially many different neural network architectures efficiently. The term “dropout” refers to dropping out units (hidden and visible) in a neural network. By dropping a unit out, we mean temporarily removing it from the network, along with all its incoming and outgoing connections.
+The choice of which units to drop is random. In the simplest case, each unit is retained with a fixed probability p independent of other units, where p can be chosen using a validation set or can simply be set at 0.5, which seems to be close to optimal for a wide range of networks and tasks. For the input units, however, the optimal probability of retention is usually closer to 1 than to 0.5.
+Related paper: 
+http://www.jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf
+
+You used CrossEntropyLoss loss and SGD Optimizer.
+Pytorch provides great LR schedulers that worth trying: 
+https://pytorch.org/docs/stable/optim.html
+
+You used vgg16 pre-trained model. Pytorch provides many pre-trained models. Some work better than vgg16 on this problem. You can try Resnets or desnets models.
+https://pytorch.org/docs/stable/torchvision/models.html
+
+You can find more improvement ideas:
+https://machinelearningmastery.com/improve-deep-learning-performance/
